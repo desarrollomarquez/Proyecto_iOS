@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		266EC08B244F5AB80093181C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EC08A244F5AB80093181C /* AppDelegate.swift */; };
+		266EC08D244F5AB80093181C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EC08C244F5AB80093181C /* ViewController.swift */; };
+		266EC090244F5AB80093181C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266EC08E244F5AB80093181C /* Main.storyboard */; };
+		266EC092244F5AB90093181C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266EC091244F5AB90093181C /* Assets.xcassets */; };
+		266EC095244F5AB90093181C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266EC093244F5AB90093181C /* LaunchScreen.storyboard */; };
+		266EC0A0244F5AB90093181C /* CrudRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EC09F244F5AB90093181C /* CrudRealmTests.swift */; };
+		266EC0AB244F5AB90093181C /* CrudRealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EC0AA244F5AB90093181C /* CrudRealmUITests.swift */; };
+		266EC0B9244F5C9C0093181C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EC0B8244F5C9C0093181C /* DBManager.swift */; };
+		266EC0BB244FDB700093181C /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EC0BA244FDB700093181C /* secondViewController.swift */; };
+		266EC0BD244FDBF20093181C /* MyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EC0BC244FDBF20093181C /* MyItem.swift */; };
+		5858177F3AF2786E53A8A0E3 /* Pods_CrudRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53019E80AA7ABEAD6C27A63 /* Pods_CrudRealm.framework */; };
+		58902320D62EB9F3330601A6 /* Pods_CrudRealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14216CE1BD4756B3934E2987 /* Pods_CrudRealmTests.framework */; };
+		6054902D2275503F7AC32763 /* Pods_CrudRealm_CrudRealmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FF17F99F239CA572C00525 /* Pods_CrudRealm_CrudRealmUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		266EC09C244F5AB90093181C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 266EC07F244F5AB80093181C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 266EC086244F5AB80093181C;
+			remoteInfo = CrudRealm;
+		};
+		266EC0A7244F5AB90093181C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 266EC07F244F5AB80093181C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 266EC086244F5AB80093181C;
+			remoteInfo = CrudRealm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14216CE1BD4756B3934E2987 /* Pods_CrudRealmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrudRealmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		266EC087244F5AB80093181C /* CrudRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrudRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		266EC08A244F5AB80093181C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		266EC08C244F5AB80093181C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		266EC08F244F5AB80093181C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		266EC091244F5AB90093181C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		266EC094244F5AB90093181C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		266EC096244F5AB90093181C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266EC09B244F5AB90093181C /* CrudRealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrudRealmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		266EC09F244F5AB90093181C /* CrudRealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudRealmTests.swift; sourceTree = "<group>"; };
+		266EC0A1244F5AB90093181C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266EC0A6244F5AB90093181C /* CrudRealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrudRealmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		266EC0AA244F5AB90093181C /* CrudRealmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudRealmUITests.swift; sourceTree = "<group>"; };
+		266EC0AC244F5AB90093181C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266EC0B8244F5C9C0093181C /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		266EC0BA244FDB700093181C /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		266EC0BC244FDBF20093181C /* MyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItem.swift; sourceTree = "<group>"; };
+		3AD50D63AED03E9DBE518BBB /* Pods-CrudRealmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrudRealmTests.debug.xcconfig"; path = "Target Support Files/Pods-CrudRealmTests/Pods-CrudRealmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DDAB7F1912DF6E649822686 /* Pods-CrudRealmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrudRealmTests.release.xcconfig"; path = "Target Support Files/Pods-CrudRealmTests/Pods-CrudRealmTests.release.xcconfig"; sourceTree = "<group>"; };
+		72BEFA6F86368FAD5ED1F2BC /* Pods-CrudRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrudRealm.release.xcconfig"; path = "Target Support Files/Pods-CrudRealm/Pods-CrudRealm.release.xcconfig"; sourceTree = "<group>"; };
+		78C11728FE59223FA33C065F /* Pods-CrudRealm-CrudRealmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrudRealm-CrudRealmUITests.release.xcconfig"; path = "Target Support Files/Pods-CrudRealm-CrudRealmUITests/Pods-CrudRealm-CrudRealmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7AC5990E6E7885FD3D2129E7 /* Pods-CrudRealm-CrudRealmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrudRealm-CrudRealmUITests.debug.xcconfig"; path = "Target Support Files/Pods-CrudRealm-CrudRealmUITests/Pods-CrudRealm-CrudRealmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3FF17F99F239CA572C00525 /* Pods_CrudRealm_CrudRealmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrudRealm_CrudRealmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53019E80AA7ABEAD6C27A63 /* Pods_CrudRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrudRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2CEF3C6FC3C06557866BF4 /* Pods-CrudRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrudRealm.debug.xcconfig"; path = "Target Support Files/Pods-CrudRealm/Pods-CrudRealm.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		266EC084244F5AB80093181C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5858177F3AF2786E53A8A0E3 /* Pods_CrudRealm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266EC098244F5AB90093181C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58902320D62EB9F3330601A6 /* Pods_CrudRealmTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266EC0A3244F5AB90093181C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6054902D2275503F7AC32763 /* Pods_CrudRealm_CrudRealmUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		266EC07E244F5AB80093181C = {
+			isa = PBXGroup;
+			children = (
+				266EC089244F5AB80093181C /* CrudRealm */,
+				266EC09E244F5AB90093181C /* CrudRealmTests */,
+				266EC0A9244F5AB90093181C /* CrudRealmUITests */,
+				266EC088244F5AB80093181C /* Products */,
+				774D7846A2E2C0A71BD5C029 /* Pods */,
+				67B4EBECB94E1CEEAB36AD44 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		266EC088244F5AB80093181C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				266EC087244F5AB80093181C /* CrudRealm.app */,
+				266EC09B244F5AB90093181C /* CrudRealmTests.xctest */,
+				266EC0A6244F5AB90093181C /* CrudRealmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		266EC089244F5AB80093181C /* CrudRealm */ = {
+			isa = PBXGroup;
+			children = (
+				266EC08A244F5AB80093181C /* AppDelegate.swift */,
+				266EC08C244F5AB80093181C /* ViewController.swift */,
+				266EC08E244F5AB80093181C /* Main.storyboard */,
+				266EC091244F5AB90093181C /* Assets.xcassets */,
+				266EC093244F5AB90093181C /* LaunchScreen.storyboard */,
+				266EC096244F5AB90093181C /* Info.plist */,
+				266EC0B8244F5C9C0093181C /* DBManager.swift */,
+				266EC0BA244FDB700093181C /* secondViewController.swift */,
+				266EC0BC244FDBF20093181C /* MyItem.swift */,
+			);
+			path = CrudRealm;
+			sourceTree = "<group>";
+		};
+		266EC09E244F5AB90093181C /* CrudRealmTests */ = {
+			isa = PBXGroup;
+			children = (
+				266EC09F244F5AB90093181C /* CrudRealmTests.swift */,
+				266EC0A1244F5AB90093181C /* Info.plist */,
+			);
+			path = CrudRealmTests;
+			sourceTree = "<group>";
+		};
+		266EC0A9244F5AB90093181C /* CrudRealmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				266EC0AA244F5AB90093181C /* CrudRealmUITests.swift */,
+				266EC0AC244F5AB90093181C /* Info.plist */,
+			);
+			path = CrudRealmUITests;
+			sourceTree = "<group>";
+		};
+		67B4EBECB94E1CEEAB36AD44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F53019E80AA7ABEAD6C27A63 /* Pods_CrudRealm.framework */,
+				C3FF17F99F239CA572C00525 /* Pods_CrudRealm_CrudRealmUITests.framework */,
+				14216CE1BD4756B3934E2987 /* Pods_CrudRealmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		774D7846A2E2C0A71BD5C029 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF2CEF3C6FC3C06557866BF4 /* Pods-CrudRealm.debug.xcconfig */,
+				72BEFA6F86368FAD5ED1F2BC /* Pods-CrudRealm.release.xcconfig */,
+				7AC5990E6E7885FD3D2129E7 /* Pods-CrudRealm-CrudRealmUITests.debug.xcconfig */,
+				78C11728FE59223FA33C065F /* Pods-CrudRealm-CrudRealmUITests.release.xcconfig */,
+				3AD50D63AED03E9DBE518BBB /* Pods-CrudRealmTests.debug.xcconfig */,
+				6DDAB7F1912DF6E649822686 /* Pods-CrudRealmTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		266EC086244F5AB80093181C /* CrudRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266EC0AF244F5AB90093181C /* Build configuration list for PBXNativeTarget "CrudRealm" */;
+			buildPhases = (
+				469855B82605A560C7EBDD5A /* [CP] Check Pods Manifest.lock */,
+				266EC083244F5AB80093181C /* Sources */,
+				266EC084244F5AB80093181C /* Frameworks */,
+				266EC085244F5AB80093181C /* Resources */,
+				03C0199105E622E8E35BD3DE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrudRealm;
+			productName = CrudRealm;
+			productReference = 266EC087244F5AB80093181C /* CrudRealm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		266EC09A244F5AB90093181C /* CrudRealmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266EC0B2244F5AB90093181C /* Build configuration list for PBXNativeTarget "CrudRealmTests" */;
+			buildPhases = (
+				FD1435B568634773FC825219 /* [CP] Check Pods Manifest.lock */,
+				266EC097244F5AB90093181C /* Sources */,
+				266EC098244F5AB90093181C /* Frameworks */,
+				266EC099244F5AB90093181C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				266EC09D244F5AB90093181C /* PBXTargetDependency */,
+			);
+			name = CrudRealmTests;
+			productName = CrudRealmTests;
+			productReference = 266EC09B244F5AB90093181C /* CrudRealmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		266EC0A5244F5AB90093181C /* CrudRealmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266EC0B5244F5AB90093181C /* Build configuration list for PBXNativeTarget "CrudRealmUITests" */;
+			buildPhases = (
+				C0987AFEF114373B44595001 /* [CP] Check Pods Manifest.lock */,
+				266EC0A2244F5AB90093181C /* Sources */,
+				266EC0A3244F5AB90093181C /* Frameworks */,
+				266EC0A4244F5AB90093181C /* Resources */,
+				A40D9DB3AD275163CD151131 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				266EC0A8244F5AB90093181C /* PBXTargetDependency */,
+			);
+			name = CrudRealmUITests;
+			productName = CrudRealmUITests;
+			productReference = 266EC0A6244F5AB90093181C /* CrudRealmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		266EC07F244F5AB80093181C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Diego Marquez Betancur";
+				TargetAttributes = {
+					266EC086244F5AB80093181C = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					266EC09A244F5AB90093181C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 266EC086244F5AB80093181C;
+					};
+					266EC0A5244F5AB90093181C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 266EC086244F5AB80093181C;
+					};
+				};
+			};
+			buildConfigurationList = 266EC082244F5AB80093181C /* Build configuration list for PBXProject "CrudRealm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 266EC07E244F5AB80093181C;
+			productRefGroup = 266EC088244F5AB80093181C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				266EC086244F5AB80093181C /* CrudRealm */,
+				266EC09A244F5AB90093181C /* CrudRealmTests */,
+				266EC0A5244F5AB90093181C /* CrudRealmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		266EC085244F5AB80093181C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266EC095244F5AB90093181C /* LaunchScreen.storyboard in Resources */,
+				266EC092244F5AB90093181C /* Assets.xcassets in Resources */,
+				266EC090244F5AB80093181C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266EC099244F5AB90093181C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266EC0A4244F5AB90093181C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C0199105E622E8E35BD3DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrudRealm/Pods-CrudRealm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrudRealm/Pods-CrudRealm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrudRealm/Pods-CrudRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		469855B82605A560C7EBDD5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrudRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A40D9DB3AD275163CD151131 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrudRealm-CrudRealmUITests/Pods-CrudRealm-CrudRealmUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrudRealm-CrudRealmUITests/Pods-CrudRealm-CrudRealmUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrudRealm-CrudRealmUITests/Pods-CrudRealm-CrudRealmUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0987AFEF114373B44595001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrudRealm-CrudRealmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD1435B568634773FC825219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrudRealmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		266EC083244F5AB80093181C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266EC0BB244FDB700093181C /* secondViewController.swift in Sources */,
+				266EC08D244F5AB80093181C /* ViewController.swift in Sources */,
+				266EC0BD244FDBF20093181C /* MyItem.swift in Sources */,
+				266EC0B9244F5C9C0093181C /* DBManager.swift in Sources */,
+				266EC08B244F5AB80093181C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266EC097244F5AB90093181C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266EC0A0244F5AB90093181C /* CrudRealmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266EC0A2244F5AB90093181C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266EC0AB244F5AB90093181C /* CrudRealmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		266EC09D244F5AB90093181C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 266EC086244F5AB80093181C /* CrudRealm */;
+			targetProxy = 266EC09C244F5AB90093181C /* PBXContainerItemProxy */;
+		};
+		266EC0A8244F5AB90093181C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 266EC086244F5AB80093181C /* CrudRealm */;
+			targetProxy = 266EC0A7244F5AB90093181C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		266EC08E244F5AB80093181C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				266EC08F244F5AB80093181C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		266EC093244F5AB90093181C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				266EC094244F5AB90093181C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		266EC0AD244F5AB90093181C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		266EC0AE244F5AB90093181C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		266EC0B0244F5AB90093181C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2CEF3C6FC3C06557866BF4 /* Pods-CrudRealm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZAC5KF36P;
+				INFOPLIST_FILE = CrudRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tcs.com.CrudRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		266EC0B1244F5AB90093181C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BEFA6F86368FAD5ED1F2BC /* Pods-CrudRealm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZAC5KF36P;
+				INFOPLIST_FILE = CrudRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tcs.com.CrudRealm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		266EC0B3244F5AB90093181C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD50D63AED03E9DBE518BBB /* Pods-CrudRealmTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZAC5KF36P;
+				INFOPLIST_FILE = CrudRealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tcs.com.CrudRealmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrudRealm.app/CrudRealm";
+			};
+			name = Debug;
+		};
+		266EC0B4244F5AB90093181C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DDAB7F1912DF6E649822686 /* Pods-CrudRealmTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZAC5KF36P;
+				INFOPLIST_FILE = CrudRealmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tcs.com.CrudRealmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrudRealm.app/CrudRealm";
+			};
+			name = Release;
+		};
+		266EC0B6244F5AB90093181C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC5990E6E7885FD3D2129E7 /* Pods-CrudRealm-CrudRealmUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZAC5KF36P;
+				INFOPLIST_FILE = CrudRealmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tcs.com.CrudRealmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrudRealm;
+			};
+			name = Debug;
+		};
+		266EC0B7244F5AB90093181C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C11728FE59223FA33C065F /* Pods-CrudRealm-CrudRealmUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZAC5KF36P;
+				INFOPLIST_FILE = CrudRealmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tcs.com.CrudRealmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrudRealm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		266EC082244F5AB80093181C /* Build configuration list for PBXProject "CrudRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266EC0AD244F5AB90093181C /* Debug */,
+				266EC0AE244F5AB90093181C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266EC0AF244F5AB90093181C /* Build configuration list for PBXNativeTarget "CrudRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266EC0B0244F5AB90093181C /* Debug */,
+				266EC0B1244F5AB90093181C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266EC0B2244F5AB90093181C /* Build configuration list for PBXNativeTarget "CrudRealmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266EC0B3244F5AB90093181C /* Debug */,
+				266EC0B4244F5AB90093181C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266EC0B5244F5AB90093181C /* Build configuration list for PBXNativeTarget "CrudRealmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266EC0B6244F5AB90093181C /* Debug */,
+				266EC0B7244F5AB90093181C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 266EC07F244F5AB80093181C /* Project object */;
+}
