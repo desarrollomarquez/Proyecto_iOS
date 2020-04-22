@@ -5,7 +5,7 @@ var str = "Hello, playground"
 print(str) */
 
 
-/* Alias de tipo */
+// ALIAS DE TIPO
 typealias Feet = Int
 var distance: Feet = 100
 print("Resultado: ", distance)
@@ -28,7 +28,7 @@ var varB2 = 1000.00
 
 print("Value of \(varA1) is more than \(varB2) millions")
 
-//opcionales
+//ENVOLTURA AUTOMATICA
 
 var myString:String? = "Holli"//"Holli"
 
@@ -38,7 +38,7 @@ if myString != nil {
     print("myString has nil value","\n")
 }
 
-
+// ENLACE OPCIONAL
 var myString2:String? = "Hello, Swift 4!"
 //myString2 = "Hello, Swift 4!"
 
@@ -47,4 +47,60 @@ if let yourString = myString2 {
 } else {
     print("Your string does not have a value")
 }
+// TUPLAS ///
+var error501 = (errorCode: 501, description: "Not Implemented")
+print(error501.errorCode)   // prints 501.
 
+// CONSTANTES
+let constA = 42
+print(constA)
+let constA1 = 42
+print(constA1)
+let constB:Float = 3.14159
+print(constB)
+
+// LITERALES
+let decimalInteger = 17         // 17 in decimal notation
+let binaryInteger = 0b10001     // 17 in binary notation
+let octalInteger = 0o21         // 17 in octal notation
+let hexadecimalInteger = 0x11   // 17 in hexadecimal notation
+let stringL = "Hello\tWorld\n\nHello\'Swift 4\'"
+print(stringL)
+
+// BUCLES
+//for in
+var someInts:[Int] = [10, 20, 30]
+for index in someInts {
+    print( "Value of index is \(index)")
+}
+// while
+var index = 10
+while index < 15 {
+    print( "Value of index is \(index)")
+    index = index + 1
+}
+// repeat .. while
+var index2 = 10
+repeat {
+    print( "repeat .. while ...Value of index is \(index2)")
+    index2 = index2 + 1
+}
+    while index2 < 20
+// Strings
+// String creation using String literal
+var stringA = "Hello, Swift 4!"
+print( stringA )
+
+// String creation using String instance
+var stringB = String("Hello, Swift 4!")
+print( stringB )
+
+//Multiple line string
+
+let stringC = """
+Hey this is a
+example of multiple Line
+string by tutorialsPoint
+
+"""
+print(stringC)
