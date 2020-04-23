@@ -104,3 +104,91 @@ string by tutorialsPoint
 
 """
 print(stringC)
+
+// Empty string creation using String literal
+var stringA1 = ""
+
+if stringA1.isEmpty {
+    print( "stringA is empty" )
+} else {
+    print( "stringA is not empty" )
+}
+// String Interpolacion
+var varA3 = 20
+let constA3 = 100
+var varC3:Float = 20.0
+
+var stringA3 = "\(varA3) times \(constA3) is equal to \(varC3 * 100)"
+print( stringA3 )
+
+var varA4 = "Hello, Swift 4!"
+print( "\(varA), length is \((varA4.count))" )
+
+var varA5 = "Hello, Swift 4!"
+var varB5 = "Hello, World!"
+
+if varA5 == varB5 {
+    print( "\(varA5) and \(varB5) are equal" )
+} else {
+    print( "\(varA5) and \(varB5) are not equal" )
+}
+
+for chars in "ThisString" {
+    print(chars, terminator: " ")
+}
+// ARRAYS
+var someInts1:[Int] = [10, 20, 30]
+print( "Value of first element is \(someInts1[0])" )
+print( "Value of second element is \(someInts1[1])" )
+print( "Value of third element is \(someInts1[2])" )
+//CHANGE ARRAYS
+var someInts2 = [Int]()
+someInts2.append(20)
+someInts2.append(30)
+someInts2 += [40]
+
+var someVar2 = someInts2[0]
+
+print( "Value of first element array is \(someVar2)" )
+print( "Value of second element is \(someInts2[1])" )
+print( "Value of third element is \(someInts2[2])" )
+
+var someStrs3 = [String]()
+
+someStrs3.append("Apple")
+someStrs3.append("Amazon")
+someStrs3 += ["Google"]
+for item in someStrs3 {
+    print(item)
+}
+// SETTERS
+let evens: Set = [10,12,14,16,18]
+let odds: Set = [5,7,9,11,13]
+let primes = [2,3,5,7]
+odds.union(evens).sorted()
+print(odds)
+// [5,7,9,10,11,12,13,14,16,18]
+odds.intersection(evens).sorted()
+print(odds.intersection(evens).sorted())
+//[]
+odds.subtracting(primes).sorted()
+print(odds.subtracting(primes).sorted())
+//[9, 11, 13]
+//DICCIONARIOS
+var someDict:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
+print(someDict[1])
+//Diccionario de Secuencia
+var cities = ["Delhi","Bangalore","Hyderabad"]
+var Distance = [2000,10, 620]
+let cityDistanceDict = Dictionary(uniqueKeysWithValues: zip(cities, Distance))
+print(cityDistanceDict)
+// Modificando diccionarios
+var someDict2:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
+var oldVal2 = someDict.updateValue("New value of one", forKey: 1)
+var someVar3 = someDict[1]
+
+print( "Old value of key = 1 is \(oldVal2)" )
+print( "Value of key = 1 is \(someVar3)" )
+print( "Value of key = 2 is \(someDict2[2])" )
+print( "Value of key = 3 is \(someDict2[3])" )
+
