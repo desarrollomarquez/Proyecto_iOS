@@ -191,4 +191,125 @@ print( "Old value of key = 1 is \(oldVal2)" )
 print( "Value of key = 1 is \(someVar3)" )
 print( "Value of key = 2 is \(someDict2[2])" )
 print( "Value of key = 3 is \(someDict2[3])" )
+//iterando diccionario
+var someDict3:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
+
+for (index, keyValue) in someDict3.enumerated() {
+    print("Dictionary key \(index) - Dictionary value \(keyValue)")
+}
+
+// FUNCIONES
+
+func votersname() -> String {
+    return "Alice"
+}
+
+print(votersname())
+func student(name: String, secondname: String) -> String {
+    return name+" - "+secondname
+}
+print(student(name: "First Program", secondname: "Second Program"))
+
+
+func display(no1: Int) -> Int {
+    let a = no1
+    return a
+}
+
+print(display(no1: 100))
+print(display(no1: 200))
+
+func ls(array: [Int]) -> (large: Int, small: Int) {
+    var lar = array[0]
+    var sma = array[0]
+    
+    for i in array[1..<array.count] {
+        if i < sma {
+            sma = i
+        } else if i > lar {
+            lar = i
+        }
+    }
+    return (lar, sma)
+}
+
+let num = ls(array: [40,12,-5,78,98])
+print("Largest number is: \(num.large) and smallest number is: \(num.small)")
+
+
+func sum(a: Int, b: Int) {
+    let a = a + b
+    let b = a - b
+    print(a, b)
+}
+
+sum(a: 20, b: 10)
+sum(a: 40, b: 10)
+sum(a: 24, b: 6)
+
+//tipos de retornos opcionales
+func minMax(array: [Int]) -> (min: Int, max: Int)? {
+    if array.isEmpty { return nil }
+    var currentMin = array[0]
+    var currentMax = array[0]
+    
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+
+if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]) {
+    print("min is \(bounds.min) and max is \(bounds.max)")
+}
+
+func vari<N>(members: N...){
+    for i in members {
+        print(i)
+    }
+}
+
+vari(members: 4,3,5)
+vari(members: 4.5, 3.1, 5.6)
+vari(members: "Swift 4", "Enumerations", "Closures")
+
+func temp(a1: inout Int, b1: inout Int) {
+    let t = a1
+    print(t)
+    a1 = b1
+    b1 = t
+}
+
+var no = 2
+var co = 10
+temp(a1: &no, b1: &co)
+print("Swapped values are \(no), \(co)")
+
+//tipos Funciones
+func sum(a: Int, b: Int) -> Int {
+    return a + b
+}
+var addition: (Int, Int) -> Int = sum
+print("Result: \(addition(40, 89))")
+/*
+func another(addition: (Int, Int) -> Int, a: Int, b: Int) {
+    print("Result: \(addition(a, b))")
+}
+print(another(sum, 10, 20))*/
+//Funciones Anidadas
+func calcDecrement(forDecrement total: Int) -> () -> Int {
+    var overallDecrement = 0
+    func decrementer() -> Int {
+        overallDecrement -= total
+        return overallDecrement
+    }
+    return decrementer
+}
+
+let decrem = calcDecrement(forDecrement: 30)
+print(decrem())
 
