@@ -437,5 +437,141 @@ print("Mark1 is \(marks.mark1)")
 print("Mark2 is \(marks.mark2)")
 print("Mark3 is \(marks.mark3)")
 
+struct markStruct {
+    var mark1: Int
+    var mark2: Int
+    var mark3: Int
+    
+    init(mark1: Int, mark2: Int, mark3: Int) {
+        self.mark1 = mark1
+        self.mark2 = mark2
+        self.mark3 = mark3
+    }
+}
+
+var marks2 = markStruct(mark1: 98, mark2: 96, mark3:100)
+print(marks2.mark1)
+print(marks2.mark2)
+print(marks2.mark3)
+// CLASES
+final class User {
+    var name: String
+
+    init(name: String) {
+        
+        self.name = name.uppercased()
+        
+    } // init
+    
+    func changeName(value: String) {
+        
+        name = value
+        
+    } // changeName
+    
+} // User
+/*let nery = User(name: "Nery")
+print("El nombre del nuevo usuario es: \(nery.name)")
+nery.changeName(value: "Maria")
+print("El nombre del nuevo usuario es: \(nery.name)")*/
+
+
+// operadores de identidad
+var nery = User(name: "Nery")
+var gloria = nery
+print("El nombre asociado a la instancia gloria es: \(gloria.name)")
+var maria = User(name: "Maria")
+print("El nombre asociado a la instancia maria es: \(maria.name)")
+
+if gloria === nery {
+    
+    print("\nLas instancias nery, gloria y maria cuentan con direcciónes de memoria propias.")
+    
+    withUnsafePointer(to: &gloria) { (address) in
+        
+        print("\nGloria address:   \(address)")
+        
+    } // withUnsafePointer
+    
+    withUnsafePointer(to: &nery) { (address) in
+        
+        print("Nery address:     \(address)")
+        
+    } // withUnsafePointer
+    
+    withUnsafePointer(to: &maria) { (address) in
+        
+        print("Maria address:    \(address)")
+        
+    } // withUnsafePointer
+    
+    print("""
+        
+        Sin direcciones de memoria propias estas instancias no pudieran diferenciarse, usualmente estas referencias
+        se almacenan en el Stack, al mismo tiempo que hacen referencia a direcciones de memoria en el Heap,
+        que es donde se inicializan los tipos por referencia.
+
+        Ahora, lo que nos importa es verificar que en efecto las referencias nery y gloria apuntan a una dirección de memoria común,
+        mientras que la instancia Maria tiene que apuntando a una dirección de memoria distinta.
+
+        Veamos:
+        
+        """)
+    
+    let neryReferencedAddress = Unmanaged.passUnretained(nery).toOpaque()
+    let gloriaReferencedAddress = Unmanaged.passUnretained(gloria).toOpaque()
+    let mariaReferencedAddress = Unmanaged.passUnretained(maria).toOpaque()
+    
+    print("La instancia nery esta referenciando la posición de memoria:     \(neryReferencedAddress)")
+    print("La instancia gloria esta referenciando la posición de memoria:   \(gloriaReferencedAddress)")
+    print("La instancia maria esta referenciando la posición de memoria:    \(mariaReferencedAddress)")
+    
+}
+//PROPIEDADES
+struct Number {
+    var digits: Int
+    let pi = 3.1415
+}
+var n = Number(digits: 12345)
+n.digits = 67
+
+print("\(n.digits)")
+print("\(n.pi)")
+// almacenada perezosa
+class sample {
+    lazy var no = number()    // `var` declaration is required.
+}
+
+class number {
+    var name = "Swift 4"
+}
+
+var firstsample = sample()
+print(firstsample.no.name)
+
+//calculadas
+class sample {
+    var no1 = 0.0, no2 = 0.0
+    var length = 300.0, breadth = 150.0
+    
+    var middle: (Double, Double) {
+        get {
+            return (length / 2, breadth / 2)
+        }
+        
+        set(axis){
+            no1 = axis.0 - (length / 2)
+            no2 = axis.1 - (breadth / 2)
+        }
+    }
+}
+
+var result = sample()
+print(result.middle)
+result.middle = (0.0, 10.0)
+
+print(result.no1)
+print(result.no2)
+
 
 
