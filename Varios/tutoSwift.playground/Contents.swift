@@ -550,7 +550,7 @@ var firstsample = sample()
 print(firstsample.no.name)
 
 //calculadas
-class sample {
+/*class sample {
     var no1 = 0.0, no2 = 0.0
     var length = 300.0, breadth = 150.0
     
@@ -571,7 +571,281 @@ print(result.middle)
 result.middle = (0.0, 10.0)
 
 print(result.no1)
-print(result.no2)
+print(result.no2) */
 
+// calculadas solo lectura
 
+class film {
+    var head = ""
+    var duration = 0.0
+    var metaInfo: [String:String] {
+        return [
+            "head": self.head,
+            "duration":"\(self.duration)"
+        ]
+    }
+}
+
+var movie = film()
+movie.head = "Swift 4 Properties"
+movie.duration = 3.09
+
+print(movie.metaInfo["head"]!)
+print(movie.metaInfo["duration"]!)
+
+// calculadas observadores propiedades
+class Samplepgm {
+    var counter: Int = 0 {
+        willSet(newTotal){
+            print("Total Counter is: \(newTotal)")
+        }
+        
+        didSet {
+            if counter > oldValue {
+                print("Newly Added Counter \(counter - oldValue)")
+            }
+        }
+    }
+}
+
+let NewCounter = Samplepgm()
+NewCounter.counter = 100
+NewCounter.counter = 800
+// tipo
+
+struct StudMarks {
+    static let markCount = 97
+    static var totalCount = 0
+    
+    var InternalMarks: Int = 0 {
+        didSet {
+            if InternalMarks > StudMarks.markCount {
+                InternalMarks = StudMarks.markCount
+            }
+            if InternalMarks > StudMarks.totalCount {
+                StudMarks.totalCount = InternalMarks
+            }
+        }
+    }
+}
+
+var stud1Mark1 = StudMarks()
+var stud1Mark2 = StudMarks()
+
+stud1Mark1.InternalMarks = 98
+print(stud1Mark1.InternalMarks)
+
+stud1Mark2.InternalMarks = 87
+print(stud1Mark2.InternalMarks)
+// METODOS
+class calculations {
+    let a: Int
+    let b: Int
+    let res: Int
+    
+    init(a: Int, b: Int) {
+        self.a = a
+        self.b = b
+        res = a + b
+    }
+    
+    func tot(c: Int) -> Int {
+        return res - c
+    }
+    
+    func result() {
+        print("Result is: \(tot(c: 20))")
+        print("Result is: \(tot(c: 50))")
+    }
+}
+let pri = calculations(a: 600, b: 300)
+pri.result()
+
+// locales y externos
+class division {
+    var count: Int = 0
+    func incrementBy(no1: Int, no2: Int) {
+        count = no1 / no2
+        print(count)
+    }
+}
+
+let counter = division()
+counter.incrementBy(no1: 1800, no2: 3)
+counter.incrementBy(no1: 1600, no2: 5)
+counter.incrementBy(no1: 11000, no2: 3)
+
+//Metodo Mutacion
+struct area {
+    var length = 1
+    var breadth = 1
+    func area() -> Int {
+        return length * breadth
+    }
+    mutating func scaleBy(res: Int) {
+        self.length *= res
+        self.breadth *= res
+        print(length)
+        print(breadth)
+    }
+}
+
+var val = area(length: 3, breadth: 5)
+val.scaleBy(res: 13)
+// tipo
+/*class Math {
+    class func abs(number: Int) -> Int {
+        if number < 0 {
+            return (-number)
+        } else {
+            return number
+        }
+    }
+}
+
+struct absno {
+    static func abs(number: Int) -> Int {
+        if number < 0 {
+            return (-number)
+        } else {
+            return number
+        }
+    }
+}
+
+let no = Math.abs(number: -35)
+let num = absno.abs(number: -5)
+
+print(no)
+print(num)*/
+//SUBINDICES
+struct subexample {
+    let decrementer: Int
+    subscript(index: Int) -> Int {
+        return decrementer / index
+    }
+}
+let division2 = subexample(decrementer: 100)
+
+print("The number is divisible by \(division2[9]) times")
+print("The number is divisible by \(division2[2]) times")
+print("The number is divisible by \(division2[3]) times")
+print("The number is divisible by \(division2[5]) times")
+print("The number is divisible by \(division2[7]) times")
+
+class daysofaweek {
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                        "Thursday", "Friday", "saturday"]
+    subscript(index: Int) -> String {
+        get {
+            return days[index]
+        }
+        set(newValue) {
+            self.days[index] = newValue
+        }
+    }
+}
+var p = daysofaweek()
+
+print(p[0])
+print(p[1])
+print(p[2])
+print(p[3])
+//sobrecarga de subindices
+/*struct Matrix {
+    let rows: Int, columns: Int
+    var print: [Double]
+    init(rows: Int, columns: Int) {
+        self.rows = rows
+        self.columns = columns
+        print = Array(count: rows * columns, repeatedValue: 0.0)
+    }
+    subscript(row: Int, column: Int) -> Double {
+        get {
+            return print[(row * columns) + column]
+        }
+        set {
+            print[(row * columns) + column] = newValue
+        }
+    }
+}
+var mat = Matrix(rows: 3, columns: 3)
+
+mat[0,0] = 1.0
+mat[0,1] = 2.0
+mat[1,0] = 3.0
+mat[1,1] = 5.0
+
+print("\(mat[0,0])")*/
+
+// HERRENCIA
+// SubClase
+/*
+class cricket {
+    func print() {
+        print("Welcome to Swift 4 Super Class")
+    }
+}
+
+class tennis: cricket {
+    override func print() {
+        print("Welcome to Swift 4 Sub Class")
+    }
+}
+
+let cricinstance = cricket()
+cricinstance.print()
+
+let tennisinstance = tennis()
+tennisinstance.print()*/
+
+class Circle {
+    var radius = 12.5
+    var area: String {
+        return "of rectangle for \(radius) "
+    }
+}
+
+class Rectangle: Circle {
+    var print = 7
+    override var area: String {
+        return super.area + " is now overridden as \(print)"
+    }
+}
+
+let rect = Rectangle()
+rect.radius = 25.0
+rect.print = 3
+print("Radius \(rect.area)")
+
+class Square: Rectangle {
+    override var radius: Double { // Anula los metodos creados en la superclase..
+        didSet {
+            print = Int(radius/5.0)+1
+        }
+    }
+}
+
+let sq = Square()
+sq.radius = 100.0
+print("Radius \(sq.area)")
+// FUNCIONES GENERICAS
+func exchange<T>(a: inout T, b: inout T) {
+    let temp = a
+    a = b
+    b = temp
+}
+var numb1 = 100
+var numb2 = 200
+
+print("Before Swapping Int values are: \(numb1) and \(numb2)")
+exchange(a: &numb1, b: &numb2)
+print("After Swapping Int values are: \(numb1) and \(numb2)")
+
+var str1 = "Generics"
+var str2 = "Functions"
+
+print("Before Swapping String values are: \(str1) and \(str2)")
+exchange(a: &str1, b: &str2)
+print("After Swapping String values are: \(str1) and \(str2)")
 
